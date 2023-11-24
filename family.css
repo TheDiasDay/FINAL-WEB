@@ -1,0 +1,164 @@
+*{
+    margin: 0 auto;  
+}
+nav{
+    margin-top: 20px;
+}
+
+header nav{
+    color: white;
+    position: absolute;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    z-index: 4;
+    padding: 30px 100px;
+    font-size: 25px;
+    animation: loadAnimation 2s;
+}
+header nav span{
+    width: 50%;
+}
+header nav span a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+header nav span a::before{
+    content: "";
+    background-color: rgb(255, 63, 63);
+    width: 0%;
+    height: 2.5px;
+    display: unset;
+    position: absolute;
+    border-radius: 20px;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+header nav span a:hover:before{
+    width: 100%;
+    color: white;
+}
+
+.active{
+    color: black;
+}
+
+.active::before{
+    background-color: black;
+    width: 100%;
+}
+
+.home{
+    background-image:url(assets/zoom\ abay.png ) ;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.htext{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    text-align: center;
+}
+
+.htext h1{
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.btn {
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #3e82f7;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.btn:hover {
+    background-color: #6ea2ff;
+    box-shadow: 0 7px 9px rgba(0, 0, 0, 0.15);
+}
+.output {
+    font-size: 20px;
+    margin-top: 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.hs{
+    text-align: center;
+    align-items: center;
+}
+
+/* Reset margin for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header nav {
+    padding: 30px 5%;
+}
+
+header nav span {
+    width: 100%;
+}
+
+/* Navigation link styles */
+header nav span a {
+    font-size: 18px;
+}
+
+/* Home section styles */
+.home {
+    padding: 50px 5%;
+}
+
+.htext h1 {
+    font-size: 40px;
+}
+
+/* Button styles */
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+/* Output styles */
+.output {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Media queries for responsiveness */
+
+/* Tablets and small screens */
+@media only screen and (max-width: 768px) {
+    header nav {
+        padding: 20px 5%;
+    }
+
+    header nav span a {
+        font-size: 16px;
+    }
+
+    .htext h1 {
+        font-size: 30px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }}
